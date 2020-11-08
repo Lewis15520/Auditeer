@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace Lewis15520\Auditeer\app\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
