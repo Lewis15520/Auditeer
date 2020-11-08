@@ -2,7 +2,9 @@
 
 namespace Lewis15520\Auditeer\app\Providers;
 
+use Lewis15520\Auditeer\app\Http\Middleware\AuditLogMiddleware;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Contracts\Http\Kernel;
 
 class AuditeerServiceProvider extends ServiceProvider
 {
@@ -16,6 +18,9 @@ class AuditeerServiceProvider extends ServiceProvider
                 ], 'migrations');
             }
         }
+
+        $kernel = $this->app->make(Kernel::class);
+        $kernel->pushMiddleware(AuditLogMiddleware::class);
     }
 
     public function register()
