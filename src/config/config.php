@@ -4,6 +4,29 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Enabling Auditeer
+    |--------------------------------------------------------------------------
+    |
+    | This option will allow you to start tracking and auditing data.
+    |
+    */
+
+    'enabled' => false,
+
+    /*
+    |--------------------------------------------------------------------------
+    | Enable Auditeer Views
+    |--------------------------------------------------------------------------
+    |
+    | This option allows you to go to '{base_url}/auditeer_data' and have a
+    | nice interface to view your Auditeer data.
+    |
+    */
+
+    'enable_views' => false,
+
+    /*
+    |--------------------------------------------------------------------------
     | Tracking Signed-in Users
     |--------------------------------------------------------------------------
     |
@@ -17,7 +40,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Track ajax requests
+    | Track Ajax Requests
     |--------------------------------------------------------------------------
     |
     | This option allows you to track ajax requests. You should consider all
@@ -40,7 +63,7 @@ return [
     */
 
     'exclusions' => [
-        'route_names'   => [],
+        'route_urls'    => [],
         'route_methods' => [],
         'ip_addresses'  => [],
         'status_codes'  => [],
