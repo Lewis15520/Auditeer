@@ -1,6 +1,6 @@
 <?php
 
-namespace Lewis15520\Auditeer;
+namespace Lewis15520\Auditeer\app\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

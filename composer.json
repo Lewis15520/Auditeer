@@ -19,7 +19,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Lewis15520\\Auditeer\\AuditeerServiceProvider"
+                "Lewis15520\\Auditeer\\app\\Providers\\AuditeerServiceProvider"
             ]
         }
     }
