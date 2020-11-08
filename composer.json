@@ -1,0 +1,26 @@
+{
+    "name": "lewis15520/auditeer",
+    "description": "A package to audit requests and model data within laravel",
+    "type": "package",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Lewis Hayter",
+            "email": "Lewis15520@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Lewis15520\\Auditeer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lewis15520\\Auditeer\\AuditeerServiceProvider"
+            ]
+        }
+    }
+}
