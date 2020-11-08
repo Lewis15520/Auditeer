@@ -17,6 +17,11 @@ class AuditeerServiceProvider extends ServiceProvider
                     __DIR__ . '/../../database/migrations/create_audit_log_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_audit_log_table.php'),
                 ], 'migrations');
             }
+
+            $this->publishes([
+                __DIR__ . '/../../config/config.php' => config_path('auditeer.php'),
+            ], 'config');
+
         }
 
         $kernel = $this->app->make(Kernel::class);
@@ -25,7 +30,7 @@ class AuditeerServiceProvider extends ServiceProvider
 
     public function register()
     {
-
+        $this->mergeConfigFrom(__DIR__ . '/../../config/config.php', 'auditeer');
     }
 
 }

@@ -13,8 +13,11 @@ class AuditLogMiddleware
     {
         $response = $next($request);
 
-        if (!$request->ajax()) {
+        if (config('auditeer.track_ajax_requests')) {
             (new AuditLogSaver($request, $response))->save();
+        } else {
+            if (!$request->ajax())
+                (new AuditLogSaver($request, $response))->save();
         }
 
         return $response;

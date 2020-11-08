@@ -38,6 +38,9 @@ class AuditLogSaver
         if (!empty($this->request->getContent()))
             $parameters['body_query'] = $this->request->getContent();
 
+        if (config('auditeer.track_signed_in_users') && auth()->check())
+            $parameters['signedin_user_id'] = auth()->user()->id;
+
         return json_encode($parameters, JSON_FORCE_OBJECT);
     }
 
