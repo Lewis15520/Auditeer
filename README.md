@@ -1,5 +1,9 @@
 # Auditeer - Work in progress
-A package to audit requests and model data in laravel
+A package to audit requests and model data in Laravel
+
+## Requirements
+- PHP 7.3 or later
+- Laravel 8 or later
 
 ## Installation
 In order to run Auditeer you are required to follow these steps in your terminal
@@ -19,4 +23,4 @@ The config is for you to configure Auditeer how you want it. There's documentati
 The Auditeer trait is for you to asign to your own models so you can track old and new data which will be stored in the ```parameters``` field. 
 
 ### Viewing recorded data
-Viewing your Auditeer data is as easy as setting the ```enable_views``` option to ```true``` in the config and going to your url and going to ```{base_url}/auditeer_data```. Auditeer will provide you with a nice little interface for you to look at and read your logs.
+Viewing your Auditeer data is as easy as setting the ```enable_views``` option to ```true``` in the config and going to  ```{base_url}/auditeer_data``` in your url. Auditeer will provide you with a nice single page interface for you to look at and read your logs. You can edit the page settings in the config under the ```view_config``` section.
