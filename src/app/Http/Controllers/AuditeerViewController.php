@@ -2,15 +2,16 @@
 
 namespace Lewis15520\Auditeer\app\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Lewis15520\Auditeer\app\Models\AuditeerAuditLog;
 
 class AuditeerViewController extends Controller
 {
 
     public function getView()
     {
-        return view('auditeer::auditeer');
+        $data = AuditeerAuditLog::paginate(config('auditeer.view_config.view.audits_per_page'));
+        return view('auditeer::auditeer', ['auditData' => $data]);
     }
 
 }

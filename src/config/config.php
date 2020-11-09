@@ -27,6 +27,34 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Auditeer View Config
+    |--------------------------------------------------------------------------
+    |
+    | These options allow you to configure the auditeer view to how you would
+    | like to see the data.
+    |
+    | view: This will allow you to edit how the view is displayed.
+    |
+    | user: This is the settings on where to find the user and how to display
+    | them.
+    |
+    */
+
+    'view_config' => [
+        'view' => [
+            'default_width'     => '1260px',
+            'audits_per_page'   => 100,
+        ],
+        'user' => [
+            'model'             => \App\Models\User::class,
+            'display_column'    => 'email',
+            'show_id'           => false,
+        ],
+    ],
+
+
+    /*
+    |--------------------------------------------------------------------------
     | Tracking Signed-in Users
     |--------------------------------------------------------------------------
     |

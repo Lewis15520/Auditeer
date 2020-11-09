@@ -16,4 +16,15 @@ class AuditeerAuditLog extends Model
       'response_status_code'
     ];
 
+    public function parameters()
+    {
+        return json_decode($this->parameters, false);
+    }
+
+    public function userFromId()
+    {
+        $user = config('auditeer.view_config.user.model');
+        return $user::where('id', $this->parameters()->user_id)->first();
+    }
+
 }
