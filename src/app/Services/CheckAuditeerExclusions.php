@@ -9,7 +9,7 @@ class CheckAuditeerExclusions
     public function hasExclusions($request, $response)
     {
         $exclusionsMap = [
-            'route_urls'     => $request->path(),
+            'route_urls'    => $request->path(),
             'route_methods' => $request->method(),
             'ip_addresses'  => $request->getClientIp(),
             'status_codes'  => $response->getStatusCode(),
