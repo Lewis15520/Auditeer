@@ -26,6 +26,9 @@ class AuditeerServiceProvider extends ServiceProvider
 
         $kernel = $this->app->make(Kernel::class);
         $kernel->pushMiddleware(AuditLogMiddleware::class);
+
+        $this->loadRoutesFrom(__DIR__ . '/../../routes/web.php');
+        $this->loadViewsFrom(__DIR__.'/../../resources/views', 'auditeer');
     }
 
     public function register()
