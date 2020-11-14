@@ -17,6 +17,15 @@ body {
 
 }
 
+.title span {
+
+    display: block;
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
+    margin-top: 10px;
+
+}
+
 .pane {
 
     display: block;
@@ -41,12 +50,7 @@ body {
 
 }
 
-.auditDataRow p {
-
-    margin: 0;
-
-}
-
+.auditDataRow p { margin: 0; }
 .auditDataRow .header { padding: 10px; }
 .auditDataRow .success { background-color: #80CBC4; }
 .auditDataRow .error { background-color: #E57373; }
@@ -116,7 +120,7 @@ body {
 
 }
 
-#dataPanel .requestData {
+#dataPanel .padding {
 
     padding: 20px;
 

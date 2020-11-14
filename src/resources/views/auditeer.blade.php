@@ -3,7 +3,7 @@
 
     <div class="centerPanel" style="width: {{ config('auditeer.view_config.view.default_width') }}; margin: 0 auto;">
 
-        <h1 class="title">Auditeer Data Viewing</h1>
+        <h1 class="title">Auditeer Data Viewing<span>Click on the audit log entries below to display their data.</span></h1>
 
         <div class="row">
 

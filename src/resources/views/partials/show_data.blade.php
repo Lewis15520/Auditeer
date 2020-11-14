@@ -1,4 +1,18 @@
-<div id="requestDataPanel">
+@if(isset($data->parameters()->url_query))
+    <div class="padding">
+        <h5>URL Parameters</h5>
+        <p class="coded">{!! json_encode($data->parameters()->url_query, JSON_PRETTY_PRINT) !!}</p>
+    </div>
+@endif
+
+@if(isset($data->parameters()->body_query))
+    <div class="padding">
+        <h5>Body Parameters</h5>
+        <p class="coded">{!! json_encode($data->parameters()->body_query, JSON_PRETTY_PRINT) !!}</p>
+    </div>
+@endif
+
+<div class="padding" id="requestDataPanel">
     <h5>Request Data</h5>
     <p>URL: <span>{{ $data->url }}</span></p>
     <p>Request Method: <span>{{ $data->method }}</span></p>
