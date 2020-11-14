@@ -38,6 +38,6 @@ $( document ).ready(function() {
         $('#dataPanel').html(data);
     }
 
-
+    $('.auditDataRow:first-child').click();
 
 });
