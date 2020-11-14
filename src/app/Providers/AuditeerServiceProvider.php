@@ -17,11 +17,12 @@ class AuditeerServiceProvider extends ServiceProvider
                     __DIR__ . '/../../database/migrations/create_audit_log_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_audit_log_table.php'),
                 ], 'migrations');
             }
-
             $this->publishes([
                 __DIR__ . '/../../config/config.php' => config_path('auditeer.php'),
             ], 'config');
-
+            $this->publishes([
+                __DIR__. '/../../resources/assets' => public_path('auditeer'),
+            ], 'assets');
         }
 
         $kernel = $this->app->make(Kernel::class);

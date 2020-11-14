@@ -43,7 +43,8 @@ return [
     'view_config' => [
         'view' => [
             'default_width'     => '1260px',
-            'audits_per_page'   => 100,
+            'audits_per_page'   => 5,
+            'carbon_format'     => 'jS \o\f F, Y g:i:s a',
         ],
         'user' => [
             'model'             => \App\Models\User::class,

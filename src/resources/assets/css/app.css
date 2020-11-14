@@ -1,0 +1,132 @@
+body {
+
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5F5F5;
+
+}
+
+.title {
+
+    margin: 15px 0;
+    font-size: 30px;
+    background-color: white;
+    -webkit-box-shadow: 0px 1px 2px 1px rgba(186,186,186,0.5);
+    -moz-box-shadow: 0px 1px 2px 1px rgba(186,186,186,0.5);
+    box-shadow: 0px 1px 2px 1px rgba(186,186,186,0.5);
+    padding: 20px;
+
+}
+
+.pane {
+
+    display: block;
+    background-color: white;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0px 1px 2px 1px rgba(186,186,186,0.5);
+    -moz-box-shadow: 0px 1px 2px 1px rgba(186,186,186,0.5);
+    box-shadow: 0px 1px 2px 1px rgba(186,186,186,0.5);
+
+}
+
+.auditDataRow {
+
+    overflow: hidden;
+    display: block;
+    background-color: white;
+    -webkit-box-shadow: 0px 1px 2px 1px rgba(186,186,186,0.5);
+    -moz-box-shadow: 0px 1px 2px 1px rgba(186,186,186,0.5);
+    box-shadow: 0px 1px 2px 1px rgba(186,186,186,0.5);
+    margin-bottom: 15px;
+    cursor: pointer;
+
+}
+
+.auditDataRow p {
+
+    margin: 0;
+
+}
+
+.auditDataRow .header { padding: 10px; }
+.auditDataRow .success { background-color: #80CBC4; }
+.auditDataRow .error { background-color: #E57373; }
+.auditDataRow .unknown { background-color: rgba(148,0,211, 0.5); }
+
+.auditDataRow .header p {
+
+    color: white;
+    font-size: 14px;
+
+}
+
+.auditDataRow .url {
+
+    background-color: rgba(0,0,0, 0.15);
+
+}
+
+.auditDataRow .url p {
+
+    font-size: 12px;
+    color: rgba(0,0,0, 0.45);
+    vertical-align: middle;
+
+}
+
+.auditDataRow .url p span {
+
+    width: 50px;
+    background-color: rgba(0,0,0,0.07);
+    margin-right: 10px;
+    padding: 5px 10px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.auditDataRow .body {
+
+    padding: 10px;
+
+}
+
+.auditDataRow .body .row:first-of-type {
+
+    margin-bottom: 15px;
+
+}
+
+.auditDataRow .body p {
+
+    font-size: 14px;
+
+}
+
+.auditDataRow .body p span {
+
+    display: block;
+    font-size: 13px;
+    color: rgba(0,0,0,0.6);
+
+}
+
+#dataPanel {
+
+
+
+}
+
+#dataPanel .requestData {
+
+    padding: 20px;
+
+
+}
+
+#dataPanel .requestData p {
+
+
+    font-size: 14px;
+    margin-bottom: 3px;
+
+}
