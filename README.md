@@ -9,7 +9,7 @@ A package to audit requests and model data in Laravel
 In order to run Auditeer you are required to follow these steps in your terminal
 
 1. Install the package with ```composer require lewis15520/auditeer```
-2. Copy the required package conents with ```php artisan vendor:publish```
+2. Copy the required package conents with ```php artisan vendor:publish --provider="Lewis15520\Auditeer\app\Providers\AuditeerServiceProvider"```
 3. Install the package migrations with ```php artisan migrate```
 
 ## Usage
