@@ -1,4 +1,4 @@
-# Auditeer - Work in progress
+# Auditeer
 A package to audit requests and model data in Laravel
 
 ## Requirements
